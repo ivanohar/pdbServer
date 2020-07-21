@@ -4,6 +4,7 @@ import com.ohar.pdbserver.entity.Person;
 import com.ohar.pdbserver.helper.AbstractHelper;
 import com.ohar.pdbserver.repository.PersonRepository;
 import com.ohar.pdbserver.service.PersonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.UnsupportedEncodingException;
@@ -15,8 +16,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class PersonServiceImpl implements PersonService {
-
-    private final PersonRepository repository;
+    @Autowired
+    private PersonRepository repository;
 
     PersonServiceImpl(PersonRepository repository) {
         this.repository = repository;

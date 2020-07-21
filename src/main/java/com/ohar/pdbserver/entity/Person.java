@@ -2,6 +2,8 @@ package com.ohar.pdbserver.entity;
 
 import com.ohar.pdbserver.converter.StringToListConverter;
 import com.ohar.pdbserver.entity.enums.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDate;
